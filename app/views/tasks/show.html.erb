@@ -1,0 +1,11 @@
+<div class="container justify-content-center">
+  <div class="list" id="show-task">
+    <h1><%= @task.title %></h1>
+    <div class="d-flex justify-content-between">
+      <p><%= @task.details %></p>
+      <p><i class="fas fa-edit"></i><%= link_to "Edit this task", edit_path %></p>
+    </div>
+  </div>
+  <p><%= link_to "Back to tasks", tasks_path %></p>
+</div>
+
